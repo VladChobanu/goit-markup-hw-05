@@ -7,7 +7,7 @@
   --titles-color: #212121;
   --icon-primay-color: #afb1b8;
 }
-.ikon {
+.icon {
   fill: var(--icon-primay-color);
 }
 html {
@@ -113,6 +113,8 @@ body {
 }
 .site-nav .link{
   position: relative;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link::after {
   position: absolute;
@@ -124,6 +126,7 @@ body {
   background: #2196f3;
   border-radius: 2px;
   visibility: hidden;
+  
 }
 .site-nav .link-nav {
   color: #212121;
@@ -176,28 +179,28 @@ visibility: visible;
   margin-left: 25px;
   padding-right: 0px;
 }
-.connection .ikon {
+.connection .icon {
   margin-right: 10px;
 }
 .connection .link:hover,
 .connection .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .connection-link {
   margin-left: 30px;
 }
-.link-nav .ikon {
-  fill: var(--icon-primay-color);
+.link-nav .icon {
+  fill: var(--primary-text-color);
 }
-.link-conn .ikon {
-  fill: var(--icon-primay-color);
+.link-conn .icon {
+  fill: var(--primary-text-color);
 }
-.link-nav:hover .ikon,
-.link-nav:focus .ikon {
+.link-nav:hover .icon,
+.link-nav:focus .icon {
   fill: var(--accent-color);
 }
-.link-conn:hover .ikon,
-.link-conn:focus .ikon {
+.link-conn:hover .icon,
+.link-conn:focus .icon {
   fill: var(--accent-color);
 }
 
@@ -397,16 +400,16 @@ visibility: visible;
   justify-content: center;
   gap: 10px;
 }
-.workers-list-item-link .ikon:hover,
-.workers-list-item-link .ikon:focus {
+.workers-list-item-link .icon:hover,
+.workers-list-item-link .icon:focus {
   fill: #ffffff;
 }
 .workers-list-item-link:hover,
 .workers-list-item-link:focus {
   background-color: var(--accent-color);
 }
-.workers-list-item-link:hover .ikon,
-.workers-list-item-link:focus .ikon {
+.workers-list-item-link:hover .icon,
+.workers-list-item-link:focus .icon {
   fill: #ffffff;
 }
 /* ----------------Clients---------------- */
@@ -437,16 +440,16 @@ visibility: visible;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-list-item-link .ikon:hover,
-.clients-list-item-link .ikon:focus {
+.clients-list-item-link .ikiconon:hover,
+.clients-list-item-link .icon:focus {
   fill: var(--accent-color);
 }
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
   border-color: var(--accent-color);
 }
-.clients-list-item-link:hover .ikon,
-.clients-list-item-link:focus .ikon {
+.clients-list-item-link:hover .icon,
+.clients-list-item-link:focus .icon {
   fill: var(--accent-color);
 }
 
@@ -520,7 +523,7 @@ address {
 .location-list-item-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.location-list .ikon {
+.location-list .icon {
   fill: #ffffff;
 }
 .location-list-item-link:hover,
@@ -678,7 +681,7 @@ h2 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop .ikon {
+.backdrop .icon {
   position: absolute;
   top: 0;
   right: 0;
